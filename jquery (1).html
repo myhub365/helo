@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <button class="button">hide</button>
+    <h2 id="h2">show</h2>
+    <p id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolores labore doloribus deserunt. Consectetur suscipit sequi, a molestias mollitia consequatur veniam eaque dolores perspiciatis sunt necessitatibus voluptatem, id doloribus corporis!</p>
+    <script>
+        $(document).ready(function() {
+            $(".button ").click(function() {
+                $("#p ").hide();
+            });
+            $("#h2").click(function() {
+                $("#p").show();
+            });
+        });
+    </script>
+</body>
+
+</html>
